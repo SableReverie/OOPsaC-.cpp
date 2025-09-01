@@ -1,25 +1,32 @@
-// OOP // OBJECT AND CLASSES
+//OOP
 #include <iostream>
 using namespace std;
-
-class FirstProfile{
-    public:
-    string name;
-    int age;
-    string city;
     
-    void MyProfile(){
-        cout << "Name: " << name << '\n';
-        cout << "Age: " << age << '\n';
-        cout << "Place: " << city << '\n';
-    }
+    class Employee {
+        public:
+        string name;
+        string company;
+        int age;
+        
+    void IntroduceYourself(){
+        cout << "Name: " << name << endl;
+        cout << "Company: " << company << endl;
+        cout << "Age: " << age << endl;
+    }    
 };
-int main () {
     
-    FirstProfile profile;
-    profile.name = "Prince";
-    profile.age = 18;
-    profile.city = "Butuan City";
-    profile.MyProfile();
+int main () {
 
+    Employee employee1;
+    employee1.name = "Prince";
+    employee1.company = "****";
+    employee1.age = 18;
+    employee1.IntroduceYourself();
+    
+    Employee employee2;
+    employee2.name = "Gian";
+    employee2.company = "****";
+    employee2.age = 17;
+    employee2.IntroduceYourself();
+    return 0;
 }

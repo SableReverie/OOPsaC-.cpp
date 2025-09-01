@@ -1,0 +1,25 @@
+// OOP // OBJECT AND CLASSES
+#include <iostream>
+using namespace std;
+
+class FirstProfile{
+    public:
+    string name;
+    int age;
+    string city;
+    
+    void MyProfile(){
+        cout << "Name: " << name << '\n';
+        cout << "Age: " << age << '\n';
+        cout << "Place: " << city << '\n';
+    }
+};
+int main () {
+    
+    FirstProfile profile;
+    profile.name = "Prince";
+    profile.age = 18;
+    profile.city = "Butuan City";
+    profile.MyProfile();
+
+}
